@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xray-cli"
+version = "1.0.0"
+description = "See through any codebase. Instant project intelligence from your terminal."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Nour", email = "nour@aiida.com.au" }]
+keywords = ["developer-tools", "codebase", "analysis", "cli", "productivity"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+]
+dependencies = ["rich>=13.0"]
+
+[project.scripts]
+xray = "xray.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/KazamaDono/xray"
+Issues = "https://github.com/KazamaDono/xray/issues"
